@@ -1,7 +1,7 @@
 import { Home } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { NavLogo } from '@/components/sidebar/logo'
+import { NavLogo } from '@/components/dashboard/sidebar/logo'
 import {
   Sidebar,
   SidebarContent,
