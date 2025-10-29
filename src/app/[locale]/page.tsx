@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server'
-import { CalendarComponent } from '@/components/calendar'
 import { LanguageToggle } from '@/components/language-toggle'
 import { ThemeToggle } from '@/components/theme/toggle'
 
@@ -8,10 +7,9 @@ export default async function Home() {
 
   return (
     <div className='flex h-screen flex-col items-center justify-center gap-10'>
+      <ThemeToggle />
       <LanguageToggle />
       <p>{t('title')}</p>
-      <ThemeToggle />
-      <CalendarComponent />
     </div>
   )
 }
