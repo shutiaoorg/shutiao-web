@@ -3,9 +3,13 @@ import '@ant-design/v5-patch-for-react-19'
 
 import { AntdRegistry } from '@ant-design/nextjs-registry'
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
+import { notFound } from 'next/navigation'
+import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { AntdWrapper } from '@/components/antd-wrapper'
 import { ThemeProvider } from '@/components/theme-provider'
+import { geist } from '@/fonts'
+import { routing } from '@/i18n/routing'
+import { cn } from '@/lib/utils'
 import { TRPCReactProvider } from '@/trpc/react'
 
 export const metadata: Metadata = {
@@ -14,18 +18,22 @@ export const metadata: Metadata = {
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 }
 
-const geist = Geist({
-  subsets: ['latin'],
-  variable: '--font-geist-sans',
-})
+type Props = {
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children, params }: Props) {
+  const { locale } = await params
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound()
+  }
+
   return (
     <html
-      lang='en'
-      className={`${geist.variable}`}
+      lang={locale}
+      className={cn(geist.variable)}
       suppressHydrationWarning
     >
       <body>
@@ -35,11 +43,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <TRPCReactProvider>
-            <AntdRegistry>
-              <AntdWrapper>{children}</AntdWrapper>
-            </AntdRegistry>
-          </TRPCReactProvider>
+          <NextIntlClientProvider>
+            <TRPCReactProvider>
+              <AntdRegistry>
+                <AntdWrapper>{children}</AntdWrapper>
+              </AntdRegistry>
+            </TRPCReactProvider>
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>

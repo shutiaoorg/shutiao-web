@@ -3,8 +3,34 @@
  * for Docker builds.
  */
 import './src/env.js'
+import createNextIntlPlugin from 'next-intl/plugin'
+
+const withNextIntl = createNextIntlPlugin()
 
 /** @type {import("next").NextConfig} */
-const config = {}
+const config = {
+  output: 'standalone',
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+  },
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+      {
+        protocol: 'http',
+        hostname: '**',
+      },
+    ],
+  },
+}
 
-export default config
+export default withNextIntl(config)
