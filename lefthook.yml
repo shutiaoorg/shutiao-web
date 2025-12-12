@@ -8,3 +8,7 @@ pre-commit:
       glob: "*.{ts,tsx}"
       run: bun run typecheck
 
+commit-msg:
+  commands:
+    "lint commit message":
+      run: bunx commitlint --edit {1}
