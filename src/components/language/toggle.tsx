@@ -13,11 +13,7 @@ import { useLanguageToggle } from '@/hooks/use-language-toggle'
 import { routing } from '@/i18n/routing'
 import { cn } from '@/lib/utils'
 
-interface LanguageToggleProps {
-  className?: string
-}
-
-export function LanguageToggle({ className }: LanguageToggleProps) {
+export function LanguageToggle() {
   const t = useTranslations('language')
   const { locale: currentLocale, onSelectChange } = useLanguageToggle()
   const [isOpen, setIsOpen] = useState(false)
@@ -29,11 +25,7 @@ export function LanguageToggle({ className }: LanguageToggleProps) {
     >
       <PopoverTrigger asChild>
         <Globe
-          className={cn(
-            'size-6 cursor-pointer',
-            // when popover is open, disable hover scale effect to prevent jitter
-            !isOpen && className,
-          )}
+          className={cn('size-6 cursor-pointer')}
           strokeWidth={2}
           absoluteStrokeWidth
         />
@@ -55,7 +47,11 @@ export function LanguageToggle({ className }: LanguageToggleProps) {
                 locale === currentLocale && 'bg-accent dark:bg-accent/50',
               )}
             >
-              {t(locale)}
+              <div className='flex items-center gap-2'>
+                {locale === 'zh' && <span>🇨🇳</span>}
+                {locale === 'en' && <span>🇺🇸</span>}
+                <span>{t(locale)}</span>
+              </div>
               {locale === currentLocale && <Check className='size-4' />}
             </Button>
           ))}

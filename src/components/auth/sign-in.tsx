@@ -144,7 +144,7 @@ export function SignIn() {
                 <Button
                   type='submit'
                   className='mt-4 h-10 w-full cursor-pointer'
-                  disabled={isLoading}
+                  disabled={true}
                 >
                   {isLoading ? <Spinner /> : t('sign-in')}
                 </Button>

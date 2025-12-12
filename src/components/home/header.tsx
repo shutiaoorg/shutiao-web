@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import { Logo } from '@/components/common/logo'
-import { SocialMedia } from '@/components/common/social-media'
+import { LanguageToggle } from '@/components/language/toggle'
 import { ThemeToggle } from '@/components/theme/toggle'
+import { ShinyButton } from '@/components/ui/shiny-button'
 import { cn } from '@/lib/utils'
+import { SIGN_IN_PAGE } from '@/routes'
 
 export function Header() {
   return (
@@ -20,9 +22,13 @@ export function Header() {
       </Link>
 
       <div className='flex items-center justify-end gap-5'>
-        <SocialMedia />
+        <LanguageToggle />
 
         <ThemeToggle />
+
+        <Link href={SIGN_IN_PAGE}>
+          <ShinyButton>Login</ShinyButton>
+        </Link>
       </div>
     </header>
   )

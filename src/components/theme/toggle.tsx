@@ -11,7 +11,10 @@ interface ThemeToggleProps {
   strokeWidth?: number
 }
 
-export function ThemeToggle({ strokeWidth = 2, className }: ThemeToggleProps) {
+export function ThemeToggle({
+  strokeWidth = 2.25,
+  className,
+}: ThemeToggleProps) {
   const { setTheme, resolvedTheme } = useTheme()
 
   const toggleTheme = () => {
