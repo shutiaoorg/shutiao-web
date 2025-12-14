@@ -5,13 +5,13 @@ import Chuhaiqu from '@/assets/images/svg/chuhaiqu.svg'
 import Juchats from '@/assets/images/svg/juchats.svg'
 // import NetworkedOS from '@/assets/images/svg/juchats.svg'
 import Mentorbook from '@/assets/images/svg/mentorbook.svg'
-import Openbuild from '@/assets/images/svg/openbuild.min.svg'
+import Openbuild from '@/assets/images/svg/openbuild.svg'
 import Podwise1 from '@/assets/images/svg/podwise-1.svg'
 import Podwise2 from '@/assets/images/svg/podwise-2.svg'
-import SocialLayer from '@/assets/images/svg/social-layer.min.svg'
-import WaytoAGI from '@/assets/images/svg/waytoagi.min.svg'
+import SocialLayer from '@/assets/images/svg/social-layer.svg'
+import WaytoAGI from '@/assets/images/svg/waytoagi.svg'
 import Youmind from '@/assets/images/svg/youmind.svg'
-import ZaoWuJuZhen from '@/assets/images/svg/zwjz-light-theme.svg'
+import ZWJZ from '@/assets/images/svg/zwjz.svg'
 
 export function Friends() {
   return (
@@ -54,10 +54,13 @@ export function Friends() {
       <Link
         href='https://zwjz.flowus.cn'
         target='_blank'
-        data-umami-event='friends:zaowu'
-        className='flex items-center gap-2 rounded-md bg-white p-1'
+        data-umami-event='friends:zwjz'
+        className='flex items-center gap-0.5'
       >
-        <ZaoWuJuZhen className='h-10' />
+        <ZWJZ className='h-8' />
+        <p className="font-['SimSun','Songti_SC',serif] font-medium text-[1.4rem] tracking-[0.2rem]">
+          物矩阵
+        </p>
       </Link>
 
       <Link
