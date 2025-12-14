@@ -45,6 +45,15 @@
         <br />
         <sub><b>💻 🎨 📝</b></sub>
       </td>
+      <td align="center">
+        <a href="https://github.com/Johnson1602">
+            <img src="https://avatars.githubusercontent.com/u/19237821?v=4" width="100;" alt="sun0225SUN"/>
+            <br />
+            <sub><b>Weiyi Xu</b></sub>
+        </a>
+        <br />
+        <sub><b>💻</b></sub>
+      </td>
 		</tr>
 	<tbody>
 </table>
@@ -55,7 +64,7 @@
 
 ## ⭐️ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=shutiaoorg/shutiao-org&type=Date)](https://github.com/shutiaoorg/shutiao-org)
+[![Star History Chart](https://api.star-history.com/svg?repos=shutiao-org/shutiao-org&type=Date)](https://github.com/shutiao-org/shutiao-org)
 
 
 ## 🪪 License
