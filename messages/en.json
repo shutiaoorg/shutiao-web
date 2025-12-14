@@ -17,6 +17,7 @@
     "events": "Events",
     "blogs": "Blogs",
     "about": "About",
+    "updates": "Updates",
     "menu": "Menu"
   },
   "metadata": {
@@ -74,6 +75,45 @@
     "subtitle": "Here are some blogs to help you learn more.",
     "not-found": "Post not found",
     "back": "Back to Blogs"
+  },
+  "updates": {
+    "title": "Changelog",
+    "subtitle": "Recording every step of our growth",
+    "v0_0_2": {
+      "title": "Community Website v0.0.2 Released 🎉",
+      "digital_nomads_text": "Added <link>\"Digital Nomads\"</link> community page.",
+      "blogs_text": "Completed <link>\"Blogs\"</link> module design and development.",
+      "updates_text": "Added <link>\"Changelog\"</link> page.",
+      "other": "Other design detail optimizations."
+    },
+    "v0_0_1": {
+      "title": "Community Website v0.0.1 Released 🎉",
+      "header": "Header navigation bar design",
+      "hero": "Hero homepage design",
+      "footer": "Footer navigation bar design",
+      "mobile": "Mobile responsive design adaptation",
+      "partners": "Added 10+ official partner friendship links."
+    },
+    "brand_founding": {
+      "title": "\"Fries Bar\" Brand Established 🎉",
+      "website_switch_text": "Community website address switched to <link>shutiao.org</link>.",
+      "x_text": "Registered \"Fries Bar\" brand <link>X</link> account.",
+      "github_text": "Registered \"Fries Bar\" brand <link>Github</link> account.",
+      "uv": "150+ UV."
+    },
+    "daily_updates": {
+      "title": "Daily Iterative Updates",
+      "logo": "Confirmed official website Logo.",
+      "dark_mode": "Supported dark mode design.",
+      "i18n": "Supported internationalization multilingualism.",
+      "uv": "Within 8 hours, gained 100+ UV."
+    },
+    "community_founding": {
+      "title": "\"Fries Bar\" Developer Community Established 🎉",
+      "website_text": "Registered <link>shutiao.dev</link> domain name, launched official website.",
+      "kol": "After 6 hours and 45 minutes, linked to 100 KOL developers.",
+      "official_account_text": "Official Account <link>\"GuoqiSun\"</link>, announced the establishment of \"Fries Bar\" developer community."
+    }
   },
   "footer": {
     "description": "Fries Bar is a community for developers.",

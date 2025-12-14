@@ -29,6 +29,7 @@
         "contentlayer2": "^0.5.3",
         "date-fns": "^4.1.0",
         "drizzle-orm": "^0.45.1",
+        "framer-motion": "^12.23.26",
         "knip": "^5.73.1",
         "lefthook": "^2.0.9",
         "lucide-react": "^0.559.0",

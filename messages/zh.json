@@ -17,6 +17,7 @@
     "events": "活动",
     "blogs": "博客",
     "about": "关于",
+    "updates": "更新",
     "menu": "菜单"
   },
   "metadata": {
@@ -74,6 +75,45 @@
     "subtitle": "这里有一些博客可以帮助你了解更多。",
     "not-found": "文章未找到",
     "back": "返回博客列表"
+  },
+  "updates": {
+    "title": "更新日志",
+    "subtitle": "记录我们成长的每一步",
+    "v0_0_2": {
+      "title": "社区官网 v0.0.2 发布 🎉",
+      "digital_nomads_text": "新增 <link>「数字游民」</link> 社区页面。",
+      "blogs_text": "完成 <link>「博客」</link> 模块设计与开发。",
+      "updates_text": "新增 <link>「更新日志」</link> 页面。",
+      "other": "其他设计细节优化。"
+    },
+    "v0_0_1": {
+      "title": "社区官网 v0.0.1 发布 🎉",
+      "header": "Header 导航栏设计",
+      "hero": "Hero 首页设计",
+      "footer": "Footer 底部导航栏设计",
+      "mobile": "移动端响应式设计适配",
+      "partners": "添加 10+ 官方合作伙伴友情链接。"
+    },
+    "brand_founding": {
+      "title": "「整点薯条吧」品牌成立 🎉",
+      "website_switch_text": "社区官网地址切换为 <link>shutiao.org</link>。",
+      "x_text": "注册了 「整点薯条吧」品牌 <link>X</link> 账号。",
+      "github_text": "注册了 「整点薯条吧」品牌 <link>Github</link> 账号。",
+      "uv": "150+ UV。"
+    },
+    "daily_updates": {
+      "title": "日常迭代更新",
+      "logo": "确定官网 Logo。",
+      "dark_mode": "支持深色模式设计。",
+      "i18n": "支持国际化多语言。",
+      "uv": "8 小时内，获得 100+ UV。"
+    },
+    "community_founding": {
+      "title": "「整点薯条吧」开发者社区成立 🎉",
+      "website_text": "注册了 <link>shutiao.dev</link> 域名，上线官网。",
+      "kol": "6 小时 45 分钟后，链接到了 100 位 KOL 开发者。",
+      "official_account_text": "公众号 <link>「GuoqiSun」</link>，宣发「整点薯条吧」开发者社区成立消息。"
+    }
   },
   "footer": {
     "description": "整点薯条吧是一个开发者社区。",
