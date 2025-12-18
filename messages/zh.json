@@ -18,7 +18,20 @@
     "blogs": "博客",
     "about": "关于",
     "updates": "更新",
-    "menu": "菜单"
+    "menu": "菜单",
+    "more": "更多",
+    "work": "工作",
+    "recruit": "招聘",
+    "seek": "求职",
+    "dali": "大理",
+    "chiangmai": "清迈",
+    "living": "生活",
+    "books": "读书",
+    "movies": "电影",
+    "music": "音乐",
+    "podcasts": "播客",
+    "cycling": "骑行",
+    "photography": "摄影"
   },
   "metadata": {
     "title": "整点薯条吧-开发者社区",
@@ -75,6 +88,42 @@
     "subtitle": "这里有一些博客可以帮助你了解更多。",
     "not-found": "文章未找到",
     "back": "返回博客列表"
+  },
+  "library": {
+    "title": "图书馆",
+    "subtitle": "精选的资源与知识集合"
+  },
+  "books": {
+    "title": "读书",
+    "subtitle": "精选的资源与知识集合"
+  },
+  "movies": {
+    "title": "电影",
+    "subtitle": "发现优秀的电影和观影体验"
+  },
+  "music": {
+    "title": "音乐",
+    "subtitle": "探索音乐收藏和推荐"
+  },
+  "podcasts": {
+    "title": "播客",
+    "subtitle": "收听精选播客和音频内容"
+  },
+  "cycling": {
+    "title": "骑行",
+    "subtitle": "探索骑行路线和冒险"
+  },
+  "photography": {
+    "title": "摄影",
+    "subtitle": "发现摄影作品和灵感"
+  },
+  "recruit": {
+    "title": "招聘",
+    "subtitle": "寻找优秀人才加入您的团队"
+  },
+  "seek": {
+    "title": "求职",
+    "subtitle": "发现令人兴奋的职业机会"
   },
   "updates": {
     "title": "更新日志",

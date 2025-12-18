@@ -16,9 +16,22 @@
     "communities": "Communities",
     "events": "Events",
     "blogs": "Blogs",
-    "about": "About",
+    "about": "About us",
     "updates": "Updates",
-    "menu": "Menu"
+    "menu": "Menu",
+    "more": "More",
+    "work": "Work",
+    "recruit": "Recruit",
+    "seek": "Seek",
+    "dali": "Dali",
+    "chiangmai": "Chiang Mai",
+    "living": "Living",
+    "books": "Books",
+    "movies": "Movies",
+    "music": "Music",
+    "podcasts": "Podcasts",
+    "cycling": "Cycling",
+    "photography": "Photography"
   },
   "metadata": {
     "title": "Fries Bar - Developer Community",
@@ -75,6 +88,42 @@
     "subtitle": "Here are some blogs to help you learn more.",
     "not-found": "Post not found",
     "back": "Back to Blogs"
+  },
+  "library": {
+    "title": "Library",
+    "subtitle": "A curated collection of resources and knowledge"
+  },
+  "books": {
+    "title": "Books",
+    "subtitle": "A curated collection of resources and knowledge"
+  },
+  "movies": {
+    "title": "Movies",
+    "subtitle": "Discover great films and cinematic experiences"
+  },
+  "music": {
+    "title": "Music",
+    "subtitle": "Explore music collections and recommendations"
+  },
+  "podcasts": {
+    "title": "Podcasts",
+    "subtitle": "Listen to curated podcasts and audio content"
+  },
+  "cycling": {
+    "title": "Cycling",
+    "subtitle": "Explore cycling routes and adventures"
+  },
+  "photography": {
+    "title": "Photography",
+    "subtitle": "Discover photography collections and inspiration"
+  },
+  "recruit": {
+    "title": "Recruit",
+    "subtitle": "Find talented professionals to join your team"
+  },
+  "seek": {
+    "title": "Seek",
+    "subtitle": "Discover exciting career opportunities"
   },
   "updates": {
     "title": "Changelog",

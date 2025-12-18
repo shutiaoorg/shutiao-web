@@ -24,12 +24,12 @@ export function Header() {
           <Logo />
         </Link>
 
-        <div className='hidden items-center justify-center md:flex'>
+        <div className='hidden items-center justify-center lg:flex'>
           <Nav />
         </div>
 
         <div className='flex flex-1 items-center justify-end gap-5'>
-          <div className='hidden items-center md:flex'>
+          <div className='hidden items-center lg:flex'>
             <Link
               href={socialLinks.github}
               target='_blank'
@@ -39,7 +39,7 @@ export function Header() {
             </Link>
           </div>
 
-          <div className='hidden items-center md:flex'>
+          <div className='hidden items-center lg:flex'>
             <ThemeToggle data-umami-event='header:theme-toggle' />
           </div>
 
@@ -51,7 +51,7 @@ export function Header() {
             <ShinyButton>Login</ShinyButton>
           </Link>
 
-          <div className='md:hidden'>
+          <div className='lg:hidden'>
             <NavMobile />
           </div>
         </div>
