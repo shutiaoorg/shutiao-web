@@ -92,7 +92,46 @@ const Update = defineDocumentType(() => ({
   },
 }))
 
+const Event = defineDocumentType(() => ({
+  name: 'Event',
+  filePathPattern: 'events/**/*.{md,mdx}',
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      description: 'The title of the event',
+      required: true,
+    },
+    date: {
+      type: 'date',
+      description: 'The date of the event',
+      required: true,
+    },
+    location: {
+      type: 'string',
+      description: 'The location of the event',
+      required: false,
+    },
+  },
+  computedFields: {
+    slug: {
+      type: 'string',
+      resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
+    },
+    locale: {
+      type: 'string',
+      resolve: (doc) => {
+        const pathParts = doc._raw.flattenedPath.split('/')
+        const localeIndex = pathParts.indexOf('events')
+        return localeIndex >= 0 && localeIndex + 1 < pathParts.length
+          ? pathParts[localeIndex + 1]!
+          : 'en'
+      },
+    },
+  },
+}))
+
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Blog, Page, Update],
+  documentTypes: [Blog, Page, Update, Event],
 })

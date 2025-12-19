@@ -90,6 +90,10 @@
     "not-found": "Post not found",
     "back": "Back to Blogs"
   },
+  "events": {
+    "title": "Events",
+    "subtitle": "Join our community events and connect with like-minded friends"
+  },
   "library": {
     "title": "Library",
     "subtitle": "A curated collection of resources and knowledge"

@@ -90,6 +90,10 @@
     "not-found": "文章未找到",
     "back": "返回博客列表"
   },
+  "events": {
+    "title": "活动",
+    "subtitle": "参与我们的社区活动，与志同道合的朋友一起交流"
+  },
   "library": {
     "title": "图书馆",
     "subtitle": "精选的资源与知识集合"
