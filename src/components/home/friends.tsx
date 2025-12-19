@@ -3,6 +3,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
+import MTPark_Dark from '@/assets/images/png/mt_park_dark.png'
+import MTPark_Light from '@/assets/images/png/mt_park_light.png'
+import NCC_Dark from '@/assets/images/png/ncc_dark.png'
+import NCC_Light from '@/assets/images/png/ncc_light.png'
 import NWOS_Dark from '@/assets/images/png/nwos_dark.png'
 import NWOS_Light from '@/assets/images/png/nwos_light.png'
 import Chuhaiqu from '@/assets/images/svg/chuhaiqu.svg'
@@ -83,6 +87,32 @@ export function Friends() {
         data-umami-event='friends:chiangmai-inn'
       >
         <CMI className='h-9' />
+      </Link>
+
+      <Link
+        href='/'
+        target='_blank'
+        data-umami-event='friends:ncc'
+      >
+        <Image
+          src={resolvedTheme === 'dark' ? NCC_Dark : NCC_Light}
+          alt='NCC'
+          width={136}
+          height={100}
+        />
+      </Link>
+
+      <Link
+        href='https://mtpark.ai?ref=shutiao.org'
+        target='_blank'
+        data-umami-event='friends:mt_park'
+      >
+        <Image
+          src={resolvedTheme === 'dark' ? MTPark_Dark : MTPark_Light}
+          alt='MTPark'
+          width={136}
+          height={100}
+        />
       </Link>
     </div>
   )
