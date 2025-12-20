@@ -34,7 +34,7 @@ export default async function UpdatesPage({
         </p>
       </div>
 
-      <div className='timeline-wrapper relative w-full'>
+      <div className='relative w-full'>
         <Timeline data={data} />
       </div>
     </div>
