@@ -32,7 +32,9 @@
     "podcasts": "播客",
     "cycling": "骑行",
     "photography": "摄影",
-    "knowledge": "知识库"
+    "knowledge": "知识库",
+    "things": "好物推荐",
+    "explore": "探索"
   },
   "metadata": {
     "title": "整点薯条吧-开发者社区",
@@ -129,6 +131,14 @@
   "photography": {
     "title": "摄影",
     "subtitle": "发现摄影作品和灵感"
+  },
+  "things": {
+    "title": "好物推荐",
+    "subtitle": "发现精选的产品推荐和好物分享"
+  },
+  "explore": {
+    "title": "探索",
+    "subtitle": "探索地点和感兴趣的地方"
   },
   "recruit": {
     "title": "招聘",

@@ -32,7 +32,9 @@
     "podcasts": "Podcasts",
     "cycling": "Cycling",
     "photography": "Photography",
-    "knowledge": "Knowledge"
+    "knowledge": "Knowledge",
+    "things": "Things",
+    "explore": "Explore"
   },
   "metadata": {
     "title": "Fries Bar - Developer Community",
@@ -129,6 +131,14 @@
   "photography": {
     "title": "Photography",
     "subtitle": "Discover photography collections and inspiration"
+  },
+  "things": {
+    "title": "Things",
+    "subtitle": "Discover curated product recommendations and good finds"
+  },
+  "explore": {
+    "title": "Explore",
+    "subtitle": "Explore locations and places of interest"
   },
   "recruit": {
     "title": "Recruit",

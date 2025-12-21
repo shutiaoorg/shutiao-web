@@ -33,6 +33,8 @@ export const NAV_ENTRIES: NavEntry[] = [
       { href: '/living/movies', label: 'movies', icon: '🎬' },
       { href: '/living/music', label: 'music', icon: '🎵' },
       { href: '/living/podcasts', label: 'podcasts', icon: '🎙️' },
+      { href: '/living/things', label: 'things', icon: '🎁' },
+      { href: '/living/explore', label: 'explore', icon: '🗺️' },
       { href: 'https://cyc.earth', label: 'cycling', icon: '🚴' },
       { href: 'https://camlife.app', label: 'photography', icon: '📷' },
     ],
