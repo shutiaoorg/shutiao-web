@@ -9,6 +9,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
+import { SocialLogin } from '@/components/auth/social-login'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import {
@@ -150,6 +151,8 @@ export function SignIn() {
                 >
                   {isLoading ? <Spinner /> : t('sign-in')}
                 </Button>
+
+                <SocialLogin />
               </form>
 
               <div className='mt-6 text-center'>
