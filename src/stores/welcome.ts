@@ -2,6 +2,7 @@
 
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import { immer } from 'zustand/middleware/immer'
 
 interface WelcomeStore {
   welcomedUsers: Record<string, boolean>
@@ -11,21 +12,18 @@ interface WelcomeStore {
 
 export const useWelcomeStore = create<WelcomeStore>()(
   persist(
-    (set, get) => ({
+    immer((set, get) => ({
       welcomedUsers: {},
       markUserWelcomed: (userId: string) => {
-        set((state) => ({
-          welcomedUsers: {
-            ...state.welcomedUsers,
-            [userId]: true,
-          },
-        }))
+        set((state) => {
+          state.welcomedUsers[userId] = true
+        })
       },
       hasUserBeenWelcomed: (userId: string) => {
         const { welcomedUsers } = get()
         return welcomedUsers[userId] === true
       },
-    }),
+    })),
     {
       name: 'welcome-storage',
     },

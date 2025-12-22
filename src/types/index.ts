@@ -1,66 +1,7 @@
-export type NavItem = {
-  href: string
-  label: string
-  icon?: React.ComponentType<{ className?: string }> | string
-}
-
-export type NavEntry = {
-  title: string
-  items: NavItem[]
-}
-
-export type Thing = {
-  id: string
-  title: string
-  image: string
-  tags: string[]
-  price: string
-  originalPrice?: string
-  href?: string
-}
-
-export type Book = {
-  id: string
-  title: string
-  author: string
-  image: string
-  description?: string
-  tags?: string[]
-  rating?: number
-  href?: string
-}
-
-export type Movie = {
-  id: string
-  title: string
-  director: string
-  image: string
-  description?: string
-  tags?: string[]
-  rating?: number
-  href?: string
-  year?: number
-}
-
-export type Music = {
-  id: string
-  title: string
-  artist: string
-  image: string
-  description?: string
-  tags?: string[]
-  rating?: number
-  href?: string
-  year?: number
-}
-
-export type Podcast = {
-  id: string
-  title: string
-  host: string
-  image: string
-  description?: string
-  tags?: string[]
-  rating?: number
-  href?: string
-}
+export type { Book } from './book'
+export type { Movie } from './movie'
+export type { Music } from './music'
+export type { NavEntry, NavItem } from './nav'
+export type { Podcast } from './podcast'
+export type { Thing } from './thing'
+export type { UserInfo } from './user'

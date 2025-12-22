@@ -2,17 +2,7 @@
 
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-
-interface UserInfo {
-  id: string
-  memberId: number
-  uuid: string | null
-  name: string
-  email: string
-  image?: string | null
-  createdAt: Date
-  updatedAt: Date
-}
+import type { UserInfo } from '@/types'
 
 interface UserStore {
   userInfo: UserInfo | null

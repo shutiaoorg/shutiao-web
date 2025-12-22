@@ -15,7 +15,8 @@
     "lefthook",
     "tailwindcss",
     "tw-animate-css",
-    "server-only"
+    "server-only",
+    "immer"
   ],
   "ignoreExportsUsedInFile": true,
   "includeEntryExports": false
