@@ -27,9 +27,10 @@
 - 🌐 Multi-language - [next-intl](https://next-intl.dev)
 - ✅ Schema Validations - [Zod](https://zod.dev)
 - 🔗 API Layer - [tRPC](https://trpc.io)
+- 🗺️ Map Scene - [ArcGIS](https://developers.arcgis.com/maplibre-gl-js/access-tokens/create-an-api-key/) && [MapLibre](https://maplibre.org/)
+- 📊 Traffic Analysis - [Umami](https://umami.is) && [Clarity](https://clarity.microsoft.com)
 - 🧹 Formatter and Linter - [Biome](https://biomejs.dev)
 - 🪝 Git hooks - [Lefthook](https://lefthook.dev)
-- 📊 Traffic Analysis - [Umami](https://umami.is)
 
 ## 👥 Contributors
 
