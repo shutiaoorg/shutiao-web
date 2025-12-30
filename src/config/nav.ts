@@ -37,6 +37,8 @@ export const NAV_ENTRIES: NavEntry[] = [
   {
     title: 'more',
     items: [
+      { href: '/lantern', label: 'lantern', icon: '🏮' },
+      { href: '/sponsor', label: 'sponsor', icon: '💰' },
       { href: '/blogs', label: 'blogs', icon: '📝' },
       { href: '/updates', label: 'updates', icon: '✨' },
       { href: '/about', label: 'about', icon: 'ℹ️' },
