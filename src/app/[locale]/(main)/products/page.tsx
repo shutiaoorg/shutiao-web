@@ -26,14 +26,19 @@ export default function ProductPage() {
       name: 'YouMind',
       href: 'https://youmind.ai?ref=shutiao.org',
       umamiEvent: 'products:youmind',
-      logo: <Youmind className='h-8 w-auto' />,
+      logo: (
+        <div className='flex items-center gap-2'>
+          <Youmind className='h-6 w-auto' />
+          <span className='font-medium text-2xl'>YouMind</span>
+        </div>
+      ),
     },
     {
       name: '芦笋',
       href: 'https://tcq.lusun.com/i/?icode=1093712',
       umamiEvent: 'products:lusun',
       logo: (
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center gap-2'>
           <Image
             src={lusun}
             alt='lusun'
@@ -61,9 +66,9 @@ export default function ProductPage() {
       href: 'https://mentorbook.ai?ref=shutiao.org',
       umamiEvent: 'products:mentorbook',
       logo: (
-        <div className='flex items-center gap-3'>
-          <Mentorbook className='h-7 w-auto' />
-          <span className='font-medium text-xl'>MentorBook</span>
+        <div className='flex items-center gap-2'>
+          <Mentorbook className='h-6 w-auto' />
+          <span className='font-medium text-2xl'>MentorBook</span>
         </div>
       ),
     },
@@ -87,6 +92,17 @@ export default function ProductPage() {
             className='rounded-lg'
           />
           <span className='font-medium text-xl'>TwitFast</span>
+        </div>
+      ),
+    },
+    {
+      name: 'ZingAI',
+      href: 'https://zingai.video?ref=shutiao.org',
+      umamiEvent: 'products:zingai',
+      logo: (
+        <div className='flex flex-col items-center gap-1'>
+          <span className='font-bold text-cyan-600 text-xl'>ZingAI</span>
+          <span className='text-gray-500 text-sm italic'>Video Editor</span>
         </div>
       ),
     },
