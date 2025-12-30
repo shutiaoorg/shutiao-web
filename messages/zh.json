@@ -33,7 +33,7 @@
     "cycling": "骑行",
     "photography": "摄影",
     "knowledge": "知识库",
-    "things": "好物推荐",
+    "things": "好物",
     "explore": "探索"
   },
   "metadata": {
@@ -102,7 +102,9 @@
   },
   "events": {
     "title": "活动",
-    "subtitle": "参与我们的社区活动，与志同道合的朋友一起交流"
+    "subtitle": "参与我们的社区活动，与志同道合的朋友一起交流",
+    "upcoming": "即将到来",
+    "past": "过去"
   },
   "library": {
     "title": "图书馆",
@@ -133,7 +135,7 @@
     "subtitle": "发现摄影作品和灵感"
   },
   "things": {
-    "title": "好物推荐",
+    "title": "好物",
     "subtitle": "发现精选的产品推荐和好物分享"
   },
   "explore": {

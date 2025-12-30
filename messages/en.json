@@ -102,7 +102,9 @@
   },
   "events": {
     "title": "Events",
-    "subtitle": "Join our community events and connect with like-minded friends"
+    "subtitle": "Join our community events and connect with like-minded friends",
+    "upcoming": "Upcoming",
+    "past": "Past"
   },
   "library": {
     "title": "Library",

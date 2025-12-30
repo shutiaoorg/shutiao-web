@@ -25,13 +25,24 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       }
     };
 
-    updateHeight();
+    const timeoutId = setTimeout(updateHeight, 0);
+
+    const resizeObserver = new ResizeObserver(() => {
+      updateHeight();
+    });
+
+    if (ref.current) {
+      resizeObserver.observe(ref.current);
+    }
+
     window.addEventListener('resize', updateHeight);
 
     return () => {
+      clearTimeout(timeoutId);
+      resizeObserver.disconnect();
       window.removeEventListener('resize', updateHeight);
     };
-  }, [ref, data]);
+  }, [data]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -50,7 +61,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row md:justify-start pt-8 md:pt-40 md:gap-10"
+            className="flex flex-col md:flex-row md:justify-start pt-8 md:pt-20 md:gap-10"
           >
             <div className="relative md:sticky flex flex-row md:flex-row z-40 items-center md:items-center top-0 md:top-40 self-start md:max-w-xs lg:max-w-sm md:w-full mb-4 md:mb-0">
               <div className="absolute left-4 md:left-8 flex items-center justify-center z-50 -translate-x-1/2">

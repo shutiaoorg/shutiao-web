@@ -2,7 +2,7 @@ import { allEvents } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { getTranslations } from 'next-intl/server'
 import { Mdx } from '@/components/common/mdx'
-import { Timeline } from '@/components/ui/timeline'
+import { EventsTabs } from '@/components/events/tabs'
 
 export default async function EventPage({
   params,
@@ -16,7 +16,20 @@ export default async function EventPage({
     .filter((event) => event.locale === locale)
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
-  const data = events.map((event) => ({
+  const now = new Date()
+  const upcomingEvents = events.filter((event) => new Date(event.date) >= now)
+  const pastEvents = events.filter((event) => new Date(event.date) < now)
+
+  const upcomingData = upcomingEvents.map((event) => ({
+    title: format(parseISO(event.date), 'yyyy-MM-dd'),
+    content: (
+      <div className='prose dark:prose-invert max-w-none'>
+        <Mdx code={event.body.code} />
+      </div>
+    ),
+  }))
+
+  const pastData = pastEvents.map((event) => ({
     title: format(parseISO(event.date), 'yyyy-MM-dd'),
     content: (
       <div className='prose dark:prose-invert max-w-none'>
@@ -34,8 +47,12 @@ export default async function EventPage({
         </p>
       </div>
 
-      <div className='relative w-full'>
-        <Timeline data={data} />
+      <div className='relative my-10 w-full'>
+        <EventsTabs
+          upcomingData={upcomingData}
+          pastData={pastData}
+          locale={locale}
+        />
       </div>
     </div>
   )
