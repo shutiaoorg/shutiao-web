@@ -1,8 +1,7 @@
 'use client'
 
 import type { LucideIcon } from 'lucide-react'
-import { Home, LifeBuoy, Send, Settings } from 'lucide-react'
-import { usePathname } from 'next/navigation'
+import { LifeBuoy, Send } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { NavGroup } from '@/components/dashboard/sidebar/nav-group'
 import { NavLogo } from '@/components/dashboard/sidebar/nav-logo'
@@ -15,12 +14,13 @@ import {
   SidebarHeader,
   SidebarRail,
 } from '@/components/ui/sidebar'
-import { DASHBOARD_HOME_PAGE, SETTINGS_PAGE } from '@/routes'
+import { usePathname } from '@/i18n/navigation'
+import { BONJOUR_PAGE, DASHBOARD_HOME_PAGE, SETTINGS_PAGE } from '@/routes'
 
 type MenuItem = {
   nameKey: string
   url: string
-  icon: LucideIcon
+  icon: LucideIcon | (() => React.ReactNode)
 }
 
 export function AppSidebar({
@@ -37,14 +37,19 @@ export function AppSidebar({
 
   const homeItem: MenuItem[] = [
     {
+      nameKey: 'bonjour',
+      url: BONJOUR_PAGE,
+      icon: () => <span className='text-lg'>👋</span>,
+    },
+    {
       nameKey: 'home',
       url: DASHBOARD_HOME_PAGE,
-      icon: Home,
+      icon: () => <span className='text-lg'>🏠</span>,
     },
     {
       nameKey: 'settings',
       url: SETTINGS_PAGE,
-      icon: Settings,
+      icon: () => <span className='text-lg'>⚙️</span>,
     },
   ]
 
